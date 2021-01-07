@@ -1,0 +1,8 @@
+#banner {
+	margin-top: 55px; /*Distacia del borde con el div contenedor superior*/
+}
+
+#banner img {
+	width: 100%;
+	height: 100%;
+}
