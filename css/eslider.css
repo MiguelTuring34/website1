@@ -1,0 +1,59 @@
+/*CONTENEDOR DEL SLDER*/
+#c-slider {
+	margin-top: 55px; /*Distacia del borde con el div contenedor superior*/
+	width: 100%; /*El ancho se adapta a toda la pantalla*/
+	/*max-width: 900px;*/
+	position: relative; /*Posicion relativa con otros elementos*/
+	overflow: hidden; /*Oculta el contenido que se sale*/
+}
+
+/*SLIDER*/
+#slider {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 400%;
+}
+
+#slider section {
+	width: 100%;
+}
+
+#slider img {
+	display: block;
+	width: 100%; /*Ocupa el 100% de ancho*/
+	height: 100%; /*Ocupa el 100% de alto*/
+}
+
+/*FORMATO DE AMBOS BOTONES*/
+#btn-prev, #btn-next {
+	width: 40px; /*Ancho*/
+	height: 40px; /*Alto*/
+	background:  rgba(255, 255, 255, 0.6); /*Color de fondo*/
+	position: absolute; /*Posicion de los botones*/
+	top: 50%; /*Posicion vertical*/
+	transform: translateY(-50%);
+	line-height: 40px; /*Altura dentro del cuadro*/
+	font-size: 22px; /*Tamaño del caracter*/
+	font-weight: bold; /*Formato del caracter (negrita)*/
+	text-align: center; /*Alinea el caracter al centro*/
+	border-radius: 50%; /*Borde circular del 50 porciento*/
+	font-family: monospace; /*Tipo de letra*/
+	cursor: pointer; /*Tipo de cursor*/
+}
+
+/*FORMATO DE AMBOS BOTONES CON SELECCIÓN*/
+#btn-prev:hover, #btn-next:hover {
+	background:  rgba(255, 255, 255, 1); /*Color de fondo*/
+}
+
+/*ALINEACIÓN DE LOS BOTONES*/
+#btn-prev {
+	left: 10px;
+}
+
+#btn-next {
+	right: 10px;
+}

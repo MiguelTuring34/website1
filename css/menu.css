@@ -1,0 +1,66 @@
+#menu-bar {
+	display: none; /*Quita el estilos del checkbox*/
+}
+
+/*Label que tiene el icono*/
+header label {
+	float: right; /*Hace que flote a la derecha dentro del header*/
+	font-size: 30px; /*Tamaño de la etiqueta (icono)*/
+	margin: 11px 0; /*Margen 11px hacia arriba y 0 hacia los costados*/
+	cursor: pointer; /*Estilo del cursor*/
+}
+
+.menu {
+	position: absolute;
+	top: 55px; 
+	left: 0;
+	width: 100%; /*Ancho al tamaño total de la ventana*/
+	height: 100vh; /*Para que ocupe el 100% del alto de la ventana*/
+	background: rgba(51,51,51,0.9);
+	/*TRANSICIONES DEL MENU*/
+	transition: all 0.5s; /*Tiempo que dura la trasisión (0.5 segundos*/
+	transform: translatex(-100%); /*Oculta el menu en su estado original*/
+}
+
+/*LINKS DEL MENU*/
+.menu a {
+	display: block; /*Acomoda las opciones de forma vertical*/
+	color: #fff; /*Color del texto*/
+	height: 50px; /*Alto de las opciones*/
+	text-decoration: none; /*Quita cualquier subrayado*/
+	padding: 16px; /*Margenes internos*/
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+/*LINKS SELECCIONADOS*/
+.menu a:hover {
+	background: rgba(255,255,255,0.3);
+}
+
+/*Cuando el id menu-bar sea seleccionada va a traer a la clase menu*/
+#menu-bar:checked ~ .menu {
+	transform: translatex(0%);
+}
+
+/*MEDIDAS PARA ESCRITORIO*/
+@media (min-width: 1024px) {
+
+	header label {
+		display: none;
+	}
+
+	.menu {
+		position: static; /*Quita la posicion absoluta del menu*/
+	    width: auto;
+	    height: auto;
+	    transform: translatex(0%); /*Vuelve a mostrar el menu*/
+	    float: right; /*Alinea el menu a la derecha*/
+	    display: flex; /*Para alinear horizontalemnte*/
+	    background: #000;
+	}
+
+	.menu a {
+		border: none;
+		height: 55px; /*Alto de las opciones*/
+	}
+}

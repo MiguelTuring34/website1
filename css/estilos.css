@@ -1,0 +1,173 @@
+@import url(menu.css);
+@import url(eslider.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*Para que no se expanda el div por el body*/
+}
+
+body {
+	font-family: 'Open Sans', sans-serif; /*Tipo de fuente*/
+	
+}
+
+/*ESTILO DEL HEADER*/
+header {
+	width: 100%; /*Ancho*/
+	height: 55px; /*Alto*/
+	background: #000; /* #333 Color del div*/
+	color: #fff; /*Color del texto*/
+	position: fixed; /*Fija la posición del div*/
+	top: 0; /*Para que no haya ningun espacio arriba*/
+	left: 0; /*Para que no haya ningun espacio a la izquierda*/
+	z-index: 100; /*Para que este siempre por delante del los demas elementos*/
+    
+    /*Fondo degradado de 2 colores*/
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), to( #00c1de)); /*Para Chrome y Safari*/
+	/*background-image: -moz-linear-gradient(top center, #00e4ff, #00c1de); /*Firefox*/
+    /*background-image: -o-linear-gradient(top, #00e4ff, #00c1de); /*Opera*/
+    /*background-image: linear-gradient(top, #00e4ff, #00c1de); /*Estandar por defecto*/
+}
+
+/*ESTILO DEL CONTENEDOR*/
+.contenedor {
+	width: 95%;
+	margin: auto; /*Fija un margen automatico centra los elemento en su interior*/
+	/*border: 2px solid #000;*/
+}
+
+h1 {
+	float: left;
+	margin: 15px 0;
+	font-size: 16pt;
+}
+
+header .contenedor {
+	display: table; 
+	padding-right: 23px; /*Margen interno derecho*/
+	padding-left: 34px; /*Margen interno izquierdo*/
+}
+
+section {
+	width: 100%;
+	margin-bottom: 25px;
+	/*border: 1px solid #000;*/
+}
+
+#bienvenidos {
+	text-align: center; /*Alineación del texto destro del div*/
+	/*border: 1px solid #000;*/
+}
+
+#bienvenidos .contenedor p {
+	padding-top: 10px; /*Margen interior superior*/
+	font-size: 16px; /*Tamaño de la fuente el pixeles*/
+	color: #4F4F4F; /*Color del texto*/
+}
+
+/*ESTILOS DE LAS SECCIONES*/
+#secciones .contenedor {
+	display: flex; /*Para que los elementos esten en una sola linea horizontal*/
+	justify-content: center; /*Alineación del contenido al centro*/
+	flex-wrap: wrap; /*Para que los elementos que no caben se bajen*/
+	/*border: 1px solid #000;*/
+}
+
+#secciones article {
+	margin: 15px; /*Margenes*/
+}
+
+#secciones img {
+	width: 100%; /*Ancho*/
+	max-width: 280px;
+}
+
+h3, h4 {
+	text-align: center;
+}
+
+/*ESTILOS SECCION DE ROYECTOS*/
+
+#proyectos {
+	/*Fondo degrado de 2 colores*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00e4ff), to( #00c1de)); /*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #00e4ff, #00c1de); /*Firefox*/
+    background-image: -o-linear-gradient(top, #00e4ff, #00c1de); /*Opera*/
+    background-image: linear-gradient(top, #00e4ff, #00c1de); /*Estandar por defecto*/
+	
+	color: #fff; /*Color del texto*/
+	text-align: center; /*Alineación del texto*/
+
+	margin-bottom: 0px; /*Margen inferior del div="proyectos"*/
+}
+
+#proyectos h3 {
+	padding-top: 18px;
+}
+
+#proyectos .contenedor {
+	display: flex; /*Para que los elementos esten en una sola linea horizontal*/
+	justify-content: center; /*Alineación del contenido al centro*/
+	flex-wrap: wrap; /*Para que los elementos que no caben se bajen*/
+	/*border: 1px solid #112233;*/
+}
+
+.proyect1 {
+	margin: 20px;
+}
+
+.proyect1 img {
+	width: 180px;
+	max-width: 180px;
+	border-radius: 10%;
+	border: 7px solid #fff;
+}
+
+
+
+/*-------ESTILOS DE FOOTER--------*/
+
+/*CONTENEDOR PRINCIPAL*/
+footer .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: #111111;
+	width: 100%;
+}
+
+/*ESTILO DEL COPYRIGHT*/
+.copy {
+	font-size: 20px;
+	color: #EEE;
+}
+
+/*ESTILOS DE LOS ICONOS EN GENERAL*/
+.sociales {
+	width: 100%; /*Ancho del div al tamaño total de la pantalla*/
+	text-align: center; /*Alineación de los iconos*/
+	font-size: 34px; /*Tamaño de los iconos*/
+	margin-top: 10px;
+}
+
+/*ESTILOS DE LOS ICONOS INDIVIDUALES*/
+.sociales .icon-face {
+	color: #002DA8;
+	text-decoration: none; /*Quita el subrayado*/
+}
+
+.sociales .icon-twitter {
+	color: #0997F6;
+	text-decoration: none; /*Quita el subrayado*/
+}
+
+.sociales .icon-youtube {
+	color: #EE0004;
+	text-decoration: none; /*Quita el subrayado*/
+}
+
+
+
